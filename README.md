@@ -30,6 +30,10 @@ git clone https://github.com/yourusername/starfield-watchface.git
 
 5. **Build the application for a real device**: You can build the application generating a `.prg` file (either using Eclipse or the VSCode extension by using the `Monkey C: Build for Device` command). Drop this `.prg` file into the APPS folder of your Garmin watch and you're ready to go.
 
+## Notes
+
+There's still a lot of work to be done. There's a lot of magic numbers, missing translations and more. Contributors are more than welcome to improve it 😊
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
