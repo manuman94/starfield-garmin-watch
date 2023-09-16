@@ -4,13 +4,21 @@
 
 This project is a custom watchface inspired by the fictional smartwatch Chronomark in the Starfield video game. It's designed for Garmin smartwatches, providing a sleek and futuristic look to your wearable device.
 
-Tested in Garmin Forerunner 255, but should work easily with devices with the same resolution (260 x 260 pixels)
+Tested **ONLY** in Garmin Forerunner 255, but should work easily with devices with the same resolution (260 x 260 pixels)
 
 ## Features
 
 - Time and date display
 - Battery status indicator
 - Step counter
+
+## How to install on your Garmin watch:
+
+1. **Download the PRG file**: Go to the project releases section and download the `.prg` file. 
+
+2. **Install it on the watch**: Connect your Garmin watch through the USB cable. Your computer will detect a new media storage. Enter your Garmin watch files and move the `.prg` file into the APPS folder.
+
+3. **Done**: It'll be set as the default watchface. 
 
 ## How to Run in Simulator
 
