@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\timeInfo.mc" id="6" lineNum="6" parent="globals" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="12" lineNum="13" parent="globals" pc="268435566" symbol="stepBarInit"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="12" lineNum="14" parent="globals" pc="268435576" symbol="stepBarInit"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="12" lineNum="15" parent="globals" pc="268435619" symbol="stepBarInit"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="12" lineNum="16" parent="globals" pc="268435662" symbol="stepBarInit"/>
+        <entry filename="c:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\build\\gen\\006-B3992-00\\source\\Rez.mcgen" id="13" lineNum="7" parent="globals/Rez" pc="268435706" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\time.mc" id="14" lineNum="14" parent="globals" pc="268435730" symbol="drawTime"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\time.mc" id="14" lineNum="16" parent="globals" pc="268435742" symbol="drawTime"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\time.mc" id="14" lineNum="17" parent="globals" pc="268435749" symbol="drawTime"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\time.mc" id="14" lineNum="18" parent="globals" pc="268435766" symbol="drawTime"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\time.mc" id="14" lineNum="19" parent="globals" pc="268435776" symbol="drawTime"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\time.mc" id="14" lineNum="20" parent="globals" pc="268435801" symbol="drawTime"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\time.mc" id="14" lineNum="21" parent="globals" pc="268435812" symbol="drawTime"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\time.mc" id="14" lineNum="24" parent="globals" pc="268435828" symbol="drawTime"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\time.mc" id="14" lineNum="25" parent="globals" pc="268435856" symbol="drawTime"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\time.mc" id="14" lineNum="26" parent="globals" pc="268435863" symbol="drawTime"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\time.mc" id="14" lineNum="29" parent="globals" pc="268435884" symbol="drawTime"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\time.mc" id="14" lineNum="32" parent="globals" pc="268435949" symbol="drawTime"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\time.mc" id="14" lineNum="33" parent="globals" pc="268435986" symbol="drawTime"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\time.mc" id="14" lineNum="34" parent="globals" pc="268436006" symbol="drawTime"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldView.mc" id="15" lineNum="10" parent="globals/starfieldView" pc="268436021" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldView.mc" id="18" lineNum="17" parent="globals/starfieldView" pc="268436040" symbol="onLayout"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldView.mc" id="18" lineNum="18" parent="globals/starfieldView" pc="268436042" symbol="onLayout"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldView.mc" id="18" lineNum="19" parent="globals/starfieldView" pc="268436083" symbol="onLayout"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldView.mc" id="18" lineNum="20" parent="globals/starfieldView" pc="268436097" symbol="onLayout"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldView.mc" id="18" lineNum="21" parent="globals/starfieldView" pc="268436109" symbol="onLayout"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldView.mc" id="18" lineNum="22" parent="globals/starfieldView" pc="268436121" symbol="onLayout"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldView.mc" id="18" lineNum="23" parent="globals/starfieldView" pc="268436133" symbol="onLayout"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldView.mc" id="18" lineNum="24" parent="globals/starfieldView" pc="268436145" symbol="onLayout"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldView.mc" id="20" lineNum="12" parent="globals/starfieldView" pc="268436158" symbol="initialize"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldView.mc" id="20" lineNum="13" parent="globals/starfieldView" pc="268436160" symbol="initialize"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldView.mc" id="22" lineNum="34" parent="globals/starfieldView" pc="268436179" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldView.mc" id="22" lineNum="36" parent="globals/starfieldView" pc="268436183" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldView.mc" id="22" lineNum="37" parent="globals/starfieldView" pc="268436207" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldView.mc" id="22" lineNum="39" parent="globals/starfieldView" pc="268436219" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldView.mc" id="22" lineNum="40" parent="globals/starfieldView" pc="268436247" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldView.mc" id="22" lineNum="41" parent="globals/starfieldView" pc="268436263" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldView.mc" id="22" lineNum="42" parent="globals/starfieldView" pc="268436277" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldView.mc" id="22" lineNum="43" parent="globals/starfieldView" pc="268436291" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldView.mc" id="22" lineNum="44" parent="globals/starfieldView" pc="268436305" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldView.mc" id="22" lineNum="45" parent="globals/starfieldView" pc="268436319" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldView.mc" id="22" lineNum="46" parent="globals/starfieldView" pc="268436333" symbol="onUpdate"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\computedValues.mc" id="23" lineNum="14" parent="globals" pc="268436348" symbol="updateComputedValues"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\computedValues.mc" id="23" lineNum="15" parent="globals" pc="268436358" symbol="updateComputedValues"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\basicLayout.mc" id="24" lineNum="19" parent="globals" pc="268436382" symbol="drawOutlineCircle"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\basicLayout.mc" id="24" lineNum="20" parent="globals" pc="268436392" symbol="drawOutlineCircle"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\basicLayout.mc" id="24" lineNum="21" parent="globals" pc="268436409" symbol="drawOutlineCircle"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\basicLayout.mc" id="24" lineNum="22" parent="globals" pc="268436471" symbol="drawOutlineCircle"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="25" lineNum="58" parent="globals" pc="268436529" symbol="getHoursRatio"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="25" lineNum="59" parent="globals" pc="268436541" symbol="getHoursRatio"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="25" lineNum="60" parent="globals" pc="268436578" symbol="getHoursRatio"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="26" lineNum="46" parent="globals" pc="268436593" symbol="drawClockHourHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="26" lineNum="47" parent="globals" pc="268436605" symbol="drawClockHourHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="26" lineNum="48" parent="globals" pc="268436618" symbol="drawClockHourHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="26" lineNum="49" parent="globals" pc="268436637" symbol="drawClockHourHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="26" lineNum="50" parent="globals" pc="268436699" symbol="drawClockHourHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="26" lineNum="51" parent="globals" pc="268436716" symbol="drawClockHourHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="26" lineNum="52" parent="globals" pc="268436809" symbol="drawClockHourHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="26" lineNum="53" parent="globals" pc="268436816" symbol="drawClockHourHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="26" lineNum="54" parent="globals" pc="268436878" symbol="drawClockHourHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="26" lineNum="55" parent="globals" pc="268436892" symbol="drawClockHourHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\timeInfo.mc" id="27" lineNum="22" parent="globals" pc="268436992" symbol="drawDayOfTheWeek"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\timeInfo.mc" id="27" lineNum="23" parent="globals" pc="268437004" symbol="drawDayOfTheWeek"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\timeInfo.mc" id="27" lineNum="24" parent="globals" pc="268437041" symbol="drawDayOfTheWeek"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\timeInfo.mc" id="27" lineNum="25" parent="globals" pc="268437083" symbol="drawDayOfTheWeek"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="28" lineNum="48" parent="globals" pc="268437154" symbol="getStepsBarMargin"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="28" lineNum="49" parent="globals" pc="268437164" symbol="getStepsBarMargin"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\batteryIndicator.mc" id="29" lineNum="21" parent="globals" pc="268437170" symbol="getBatteryRatio"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\batteryIndicator.mc" id="29" lineNum="22" parent="globals" pc="268437180" symbol="getBatteryRatio"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="30" lineNum="12" parent="globals" pc="268437208" symbol="drawClockSecondHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="30" lineNum="13" parent="globals" pc="268437220" symbol="drawClockSecondHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="30" lineNum="14" parent="globals" pc="268437233" symbol="drawClockSecondHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="30" lineNum="15" parent="globals" pc="268437252" symbol="drawClockSecondHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="30" lineNum="16" parent="globals" pc="268437314" symbol="drawClockSecondHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="30" lineNum="17" parent="globals" pc="268437331" symbol="drawClockSecondHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="30" lineNum="18" parent="globals" pc="268437424" symbol="drawClockSecondHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="30" lineNum="19" parent="globals" pc="268437431" symbol="drawClockSecondHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="30" lineNum="20" parent="globals" pc="268437493" symbol="drawClockSecondHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="30" lineNum="21" parent="globals" pc="268437507" symbol="drawClockSecondHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\basicLayout.mc" id="31" lineNum="27" parent="globals" pc="268437607" symbol="drawTimeMarkers"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\basicLayout.mc" id="31" lineNum="28" parent="globals" pc="268437619" symbol="drawTimeMarkers"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\basicLayout.mc" id="31" lineNum="29" parent="globals" pc="268437626" symbol="drawTimeMarkers"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\basicLayout.mc" id="31" lineNum="30" parent="globals" pc="268437633" symbol="drawTimeMarkers"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\basicLayout.mc" id="31" lineNum="31" parent="globals" pc="268437640" symbol="drawTimeMarkers"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\basicLayout.mc" id="31" lineNum="32" parent="globals" pc="268437682" symbol="drawTimeMarkers"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\basicLayout.mc" id="31" lineNum="39" parent="globals" pc="268437722" symbol="drawTimeMarkers"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\basicLayout.mc" id="31" lineNum="46" parent="globals" pc="268437771" symbol="drawTimeMarkers"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\basicLayout.mc" id="31" lineNum="53" parent="globals" pc="268437811" symbol="drawTimeMarkers"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldBackground.mc" id="32" lineNum="6" parent="globals/Background" pc="268437861" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldBackground.mc" id="33" lineNum="8" parent="globals/Background" pc="268437880" symbol="initialize"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldBackground.mc" id="33" lineNum="9" parent="globals/Background" pc="268437884" symbol="initialize"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldBackground.mc" id="33" lineNum="13" parent="globals/Background" pc="268437905" symbol="initialize"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldBackground.mc" id="34" lineNum="16" parent="globals/Background" pc="268437926" symbol="draw"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldBackground.mc" id="34" lineNum="18" parent="globals/Background" pc="268437928" symbol="draw"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldBackground.mc" id="34" lineNum="19" parent="globals/Background" pc="268437970" symbol="draw"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\basicLayout.mc" id="35" lineNum="64" parent="globals" pc="268437983" symbol="drawCircleTicks"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\basicLayout.mc" id="35" lineNum="65" parent="globals" pc="268437995" symbol="drawCircleTicks"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\basicLayout.mc" id="35" lineNum="66" parent="globals" pc="268438013" symbol="drawCircleTicks"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\basicLayout.mc" id="35" lineNum="67" parent="globals" pc="268438030" symbol="drawCircleTicks"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\basicLayout.mc" id="35" lineNum="68" parent="globals" pc="268438092" symbol="drawCircleTicks"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="36" lineNum="64" parent="globals" pc="268438160" symbol="drawPedestrian"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="36" lineNum="65" parent="globals" pc="268438170" symbol="drawPedestrian"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\timeInfo.mc" id="37" lineNum="34" parent="globals" pc="268438210" symbol="drawDayOfTheMonth"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\timeInfo.mc" id="37" lineNum="35" parent="globals" pc="268438222" symbol="drawDayOfTheMonth"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\timeInfo.mc" id="37" lineNum="36" parent="globals" pc="268438259" symbol="drawDayOfTheMonth"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\timeInfo.mc" id="37" lineNum="37" parent="globals" pc="268438301" symbol="drawDayOfTheMonth"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="38" lineNum="25" parent="globals" pc="268438407" symbol="drawStepsBar"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="38" lineNum="27" parent="globals" pc="268438417" symbol="drawStepsBar"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="38" lineNum="28" parent="globals" pc="268438434" symbol="drawStepsBar"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="38" lineNum="29" parent="globals" pc="268438496" symbol="drawStepsBar"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="38" lineNum="32" parent="globals" pc="268438559" symbol="drawStepsBar"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="38" lineNum="33" parent="globals" pc="268438579" symbol="drawStepsBar"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="38" lineNum="34" parent="globals" pc="268438596" symbol="drawStepsBar"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="38" lineNum="35" parent="globals" pc="268438658" symbol="drawStepsBar"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="38" lineNum="38" parent="globals" pc="268438730" symbol="drawStepsBar"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="38" lineNum="39" parent="globals" pc="268438772" symbol="drawStepsBar"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="39" lineNum="60" parent="globals" pc="268438831" symbol="getStepsGoalEndAngle"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="39" lineNum="61" parent="globals" pc="268438841" symbol="getStepsGoalEndAngle"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="40" lineNum="6" parent="globals" pc="268438874" symbol="drawClockHands"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="40" lineNum="7" parent="globals" pc="268438884" symbol="drawClockHands"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="40" lineNum="8" parent="globals" pc="268438898" symbol="drawClockHands"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="40" lineNum="9" parent="globals" pc="268438912" symbol="drawClockHands"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldApp.mc" id="41" lineNum="5" parent="globals/starfieldApp" pc="268438927" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldApp.mc" id="42" lineNum="12" parent="globals/starfieldApp" pc="268438946" symbol="onStart"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldApp.mc" id="43" lineNum="25" parent="globals/starfieldApp" pc="268438949" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldApp.mc" id="43" lineNum="26" parent="globals/starfieldApp" pc="268438951" symbol="onSettingsChanged"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldApp.mc" id="44" lineNum="20" parent="globals/starfieldApp" pc="268438968" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldApp.mc" id="44" lineNum="21" parent="globals/starfieldApp" pc="268438970" symbol="getInitialView"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldApp.mc" id="45" lineNum="7" parent="globals/starfieldApp" pc="268439011" symbol="initialize"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldApp.mc" id="45" lineNum="8" parent="globals/starfieldApp" pc="268439013" symbol="initialize"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldApp.mc" id="46" lineNum="16" parent="globals/starfieldApp" pc="268439032" symbol="onStop"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\basicLayout.mc" id="47" lineNum="10" parent="globals" pc="268439035" symbol="drawBasicLayout"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\basicLayout.mc" id="47" lineNum="11" parent="globals" pc="268439045" symbol="drawBasicLayout"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\basicLayout.mc" id="47" lineNum="12" parent="globals" pc="268439059" symbol="drawBasicLayout"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\basicLayout.mc" id="47" lineNum="13" parent="globals" pc="268439073" symbol="drawBasicLayout"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\timeInfo.mc" id="48" lineNum="18" parent="globals" pc="268439088" symbol="timeInfoInit"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\timeInfo.mc" id="48" lineNum="19" parent="globals" pc="268439098" symbol="timeInfoInit"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\time.mc" id="49" lineNum="10" parent="globals" pc="268439142" symbol="timeInit"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\time.mc" id="49" lineNum="11" parent="globals" pc="268439152" symbol="timeInit"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="50" lineNum="52" parent="globals" pc="268439196" symbol="getStepsGoalRatio"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="50" lineNum="53" parent="globals" pc="268439208" symbol="getStepsGoalRatio"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="50" lineNum="54" parent="globals" pc="268439248" symbol="getStepsGoalRatio"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="50" lineNum="55" parent="globals" pc="268439259" symbol="getStepsGoalRatio"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="50" lineNum="57" parent="globals" pc="268439268" symbol="getStepsGoalRatio"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="51" lineNum="19" parent="globals" pc="268439271" symbol="drawFullStepsBar"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="51" lineNum="20" parent="globals" pc="268439281" symbol="drawFullStepsBar"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="51" lineNum="21" parent="globals" pc="268439295" symbol="drawFullStepsBar"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="51" lineNum="22" parent="globals" pc="268439309" symbol="drawFullStepsBar"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="52" lineNum="72" parent="globals" pc="268439324" symbol="drawFlag"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\stepsBar.mc" id="52" lineNum="73" parent="globals" pc="268439334" symbol="drawFlag"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="53" lineNum="29" parent="globals" pc="268439383" symbol="drawClockMinuteHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="53" lineNum="30" parent="globals" pc="268439395" symbol="drawClockMinuteHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="53" lineNum="31" parent="globals" pc="268439408" symbol="drawClockMinuteHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="53" lineNum="32" parent="globals" pc="268439427" symbol="drawClockMinuteHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="53" lineNum="33" parent="globals" pc="268439489" symbol="drawClockMinuteHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="53" lineNum="34" parent="globals" pc="268439506" symbol="drawClockMinuteHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="53" lineNum="35" parent="globals" pc="268439599" symbol="drawClockMinuteHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="53" lineNum="36" parent="globals" pc="268439606" symbol="drawClockMinuteHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="53" lineNum="37" parent="globals" pc="268439668" symbol="drawClockMinuteHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="53" lineNum="38" parent="globals" pc="268439682" symbol="drawClockMinuteHand"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldApp.mc" id="54" lineNum="31" parent="globals" pc="268439782" symbol="getApp"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\starfieldApp.mc" id="54" lineNum="32" parent="globals" pc="268439792" symbol="getApp"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="55" lineNum="41" parent="globals" pc="268439808" symbol="getMinutesRatio"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="55" lineNum="42" parent="globals" pc="268439820" symbol="getMinutesRatio"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="55" lineNum="43" parent="globals" pc="268439857" symbol="getMinutesRatio"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="56" lineNum="24" parent="globals" pc="268439872" symbol="getSecondsRatio"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="56" lineNum="25" parent="globals" pc="268439884" symbol="getSecondsRatio"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\clockHands.mc" id="56" lineNum="26" parent="globals" pc="268439921" symbol="getSecondsRatio"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\batteryIndicator.mc" id="57" lineNum="9" parent="globals" pc="268439936" symbol="drawBatteryIndicator"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\batteryIndicator.mc" id="57" lineNum="10" parent="globals" pc="268439948" symbol="drawBatteryIndicator"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\batteryIndicator.mc" id="57" lineNum="11" parent="globals" pc="268439955" symbol="drawBatteryIndicator"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\batteryIndicator.mc" id="57" lineNum="12" parent="globals" pc="268439962" symbol="drawBatteryIndicator"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\batteryIndicator.mc" id="57" lineNum="14" parent="globals" pc="268439979" symbol="drawBatteryIndicator"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\batteryIndicator.mc" id="57" lineNum="15" parent="globals" pc="268440041" symbol="drawBatteryIndicator"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\batteryIndicator.mc" id="57" lineNum="17" parent="globals" pc="268440090" symbol="drawBatteryIndicator"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\batteryIndicator.mc" id="57" lineNum="18" parent="globals" pc="268440152" symbol="drawBatteryIndicator"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\basicLayout.mc" id="58" lineNum="6" parent="globals" pc="268440229" symbol="basicLayoutInit"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\components\\basicLayout.mc" id="58" lineNum="7" parent="globals" pc="268440239" symbol="basicLayoutInit"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\computedValues.mc" id="59" lineNum="9" parent="globals" pc="268440283" symbol="initComputedValues"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\computedValues.mc" id="59" lineNum="10" parent="globals" pc="268440293" symbol="initComputedValues"/>
+        <entry filename="C:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\source\\computedValues.mc" id="59" lineNum="11" parent="globals" pc="268440312" symbol="initComputedValues"/>
+        <entry filename="c:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\build\\gen\\006-B3992-00\\source\\Rez.mcgen" id="60" lineNum="26" parent="globals/Rez/Layouts" pc="268440335" symbol="WatchFace"/>
+        <entry filename="c:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\build\\gen\\006-B3992-00\\source\\Rez.mcgen" id="60" lineNum="27" parent="globals/Rez/Layouts" pc="268440347" symbol="WatchFace"/>
+        <entry filename="c:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\build\\gen\\006-B3992-00\\source\\Rez.mcgen" id="60" lineNum="29" parent="globals/Rez/Layouts" pc="268440375" symbol="WatchFace"/>
+        <entry filename="c:\\Users\\sora_\\Documents\\projects\\GarminWatchfaces\\Starfield\\starfield\\build\\gen\\006-B3992-00\\source\\Rez.mcgen" id="60" lineNum="31" parent="globals/Rez/Layouts" pc="268440510" symbol="WatchFace"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry field="true" id="58" symbol="starfield_24"/>
+        <entry field="true" id="57" symbol="starfield_17"/>
+        <entry field="true" id="56" symbol="starfield_14"/>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry field="true" id="55" symbol="starfield_12"/>
+        <entry field="true" id="54" symbol="starfield_10"/>
+        <entry id="34" method="true" symbol="getStepsGoalEndAngle"/>
+        <entry id="40" object="true" symbol="starfieldView"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="7" module="true" symbol="globals/Rez/Menus"/>
+        <entry field="true" id="8389671" symbol="screenWidth"/>
+        <entry id="8389683" method="true" symbol="onSettingsChanged"/>
+        <entry id="22" method="true" symbol="drawFullStepsBar"/>
+        <entry field="true" id="65" symbol="ColorRed"/>
+        <entry field="true" id="51" symbol="Flag"/>
+        <entry id="11" method="true" symbol="basicLayoutInit"/>
+        <entry field="true" id="38" symbol="screenRadius"/>
+        <entry field="true" id="53" symbol="Pedestrian"/>
+        <entry id="32" method="true" symbol="getSecondsRatio"/>
+        <entry id="31" method="true" symbol="getMinutesRatio"/>
+        <entry id="27" method="true" symbol="drawTimeMarkers"/>
+        <entry id="45" method="true" symbol="timeInfoInit"/>
+        <entry field="true" id="68" symbol="MilitaryFormatTitle"/>
+        <entry id="8388924" module="true" symbol="Gregorian"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="9" symbol="DAYS_OF_THE_WEEK"/>
+        <entry field="true" id="62" symbol="ColorBlue"/>
+        <entry id="26" method="true" symbol="drawTime"/>
+        <entry id="46" method="true" symbol="timeInit"/>
+        <entry field="true" id="59" symbol="AppName"/>
+        <entry id="8388633" module="true" symbol="ActivityMonitor"/>
+        <entry id="8" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry id="18" method="true" symbol="drawClockSecondHand"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="35" method="true" symbol="getStepsGoalRatio"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry field="true" id="28" symbol="flagDrawable"/>
+        <entry field="true" id="10" symbol="activityInfo"/>
+        <entry id="17" method="true" symbol="drawClockMinuteHand"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="39" object="true" symbol="starfieldApp"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="13" method="true" symbol="drawBatteryIndicator"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="50" module="true" symbol="Menus"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry field="true" id="63" symbol="ColorDarkGray"/>
+        <entry id="6" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="33" method="true" symbol="getStepsBarMargin"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="14" method="true" symbol="drawCircleTicks"/>
+        <entry id="8389376" method="true" symbol="onEnterSleep"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry field="true" id="37" symbol="pedestrianDrawable"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry field="true" id="66" symbol="ColorWhite"/>
+        <entry id="5" module="true" symbol="globals/Rez/JsonData"/>
+        <entry field="true" id="61" symbol="ColorBlack"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry field="true" id="44" symbol="timeInfoFont"/>
+        <entry field="true" id="42" symbol="stepsFont"/>
+        <entry id="29" method="true" symbol="getBatteryRatio"/>
+        <entry id="8389377" method="true" symbol="onExitSleep"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry field="true" id="43" symbol="timeFont"/>
+        <entry id="8388645" module="true" symbol="Time"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="25" method="true" symbol="drawStepsBar"/>
+        <entry id="15" method="true" symbol="drawClockHands"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="8390088" module="true" object="true" symbol="JsonData"/>
+        <entry id="8389068" method="true" symbol="draw"/>
+        <entry field="true" id="52" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="23" method="true" symbol="drawOutlineCircle"/>
+        <entry id="21" method="true" symbol="drawFlag"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry field="true" id="60" symbol="BackgroundColorTitle"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8390146" module="true" object="true" symbol="Background"/>
+        <entry id="19" method="true" symbol="drawDayOfTheMonth"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="36" method="true" symbol="initComputedValues"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry id="12" method="true" symbol="drawBasicLayout"/>
+        <entry id="8388641" module="true" symbol="Math"/>
+        <entry field="true" id="64" symbol="ColorLightGray"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="8389347" symbol="color"/>
+        <entry field="true" id="67" symbol="ForegroundColorTitle"/>
+        <entry id="16" method="true" symbol="drawClockHourHand"/>
+        <entry id="20" method="true" symbol="drawDayOfTheWeek"/>
+        <entry id="49" module="true" symbol="Layouts"/>
+        <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
+        <entry id="30" method="true" symbol="getHoursRatio"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="48" method="true" symbol="updateComputedValues"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry field="true" id="47" symbol="timeMarkersFont"/>
+        <entry id="24" method="true" symbol="drawPedestrian"/>
+        <entry id="41" method="true" symbol="stepBarInit"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268436020" name="dc" stackId="1" startPc="268435730"/>
+        <entry arg="true" endPc="268436020" name="timeViewElement" stackId="2" startPc="268435730"/>
+        <entry endPc="268436019" name="timeFormat" stackId="3" startPc="268435742"/>
+        <entry endPc="268436019" name="clockTime" stackId="4" startPc="268435742"/>
+        <entry endPc="268436019" name="hours" stackId="5" startPc="268435742"/>
+        <entry endPc="268436019" name="timeString" stackId="6" startPc="268435742"/>
+        <entry arg="true" endPc="268436157" name="dc" stackId="1" startPc="268436040"/>
+        <entry arg="true" endPc="268436347" name="dc" stackId="1" startPc="268436179"/>
+        <entry endPc="268436346" name="timeViewElement" stackId="2" startPc="268436183"/>
+        <entry arg="true" endPc="268436528" name="dc" stackId="1" startPc="268436382"/>
+        <entry endPc="268436592" name="today" stackId="1" startPc="268436541"/>
+        <entry arg="true" endPc="268436991" name="dc" stackId="1" startPc="268436593"/>
+        <entry endPc="268436990" name="hoursRatio" stackId="2" startPc="268436605"/>
+        <entry endPc="268436990" name="hoursHandAngle" stackId="3" startPc="268436605"/>
+        <entry endPc="268436990" name="highlighPenWidth" stackId="4" startPc="268436605"/>
+        <entry arg="true" endPc="268437153" name="dc" stackId="1" startPc="268436992"/>
+        <entry endPc="268437152" name="today" stackId="2" startPc="268437004"/>
+        <entry arg="true" endPc="268437606" name="dc" stackId="1" startPc="268437208"/>
+        <entry endPc="268437605" name="secondsRatio" stackId="2" startPc="268437220"/>
+        <entry endPc="268437605" name="secondHandAngle" stackId="3" startPc="268437220"/>
+        <entry endPc="268437605" name="highlighPenWidth" stackId="4" startPc="268437220"/>
+        <entry arg="true" endPc="268437860" name="dc" stackId="1" startPc="268437607"/>
+        <entry endPc="268437859" name="hOffset" stackId="2" startPc="268437619"/>
+        <entry endPc="268437859" name="vOffset" stackId="3" startPc="268437619"/>
+        <entry endPc="268437859" name="fontSize" stackId="4" startPc="268437619"/>
+        <entry endPc="268437924" name="dictionary" stackId="1" startPc="268437884"/>
+        <entry arg="true" endPc="268437982" name="dc" stackId="1" startPc="268437926"/>
+        <entry arg="true" endPc="268438159" name="dc" stackId="1" startPc="268437983"/>
+        <entry endPc="268438158" name="angle" stackId="2" startPc="268438013"/>
+        <entry arg="true" endPc="268438209" name="dc" stackId="1" startPc="268438160"/>
+        <entry arg="true" endPc="268438406" name="dc" stackId="1" startPc="268438210"/>
+        <entry endPc="268438405" name="today" stackId="2" startPc="268438222"/>
+        <entry arg="true" endPc="268438830" name="dc" stackId="1" startPc="268438407"/>
+        <entry arg="true" endPc="268438926" name="dc" stackId="1" startPc="268438874"/>
+        <entry arg="true" endPc="268439087" name="dc" stackId="1" startPc="268439035"/>
+        <entry endPc="268439270" name="stepsGoal" stackId="1" startPc="268439208"/>
+        <entry arg="true" endPc="268439323" name="dc" stackId="1" startPc="268439271"/>
+        <entry arg="true" endPc="268439382" name="dc" stackId="1" startPc="268439324"/>
+        <entry arg="true" endPc="268439781" name="dc" stackId="1" startPc="268439383"/>
+        <entry endPc="268439780" name="minutesRatio" stackId="2" startPc="268439395"/>
+        <entry endPc="268439780" name="minuteHandAngle" stackId="3" startPc="268439395"/>
+        <entry endPc="268439780" name="highlighPenWidth" stackId="4" startPc="268439395"/>
+        <entry endPc="268439871" name="today" stackId="1" startPc="268439820"/>
+        <entry endPc="268439935" name="today" stackId="1" startPc="268439884"/>
+        <entry arg="true" endPc="268440228" name="dc" stackId="1" startPc="268439936"/>
+        <entry endPc="268440227" name="vOffset" stackId="2" startPc="268439948"/>
+        <entry endPc="268440227" name="roundingRadius" stackId="3" startPc="268439948"/>
+        <entry arg="true" endPc="268440334" name="dc" stackId="1" startPc="268440283"/>
+        <entry arg="true" endPc="268440536" name="dc" stackId="1" startPc="268440335"/>
+        <entry endPc="268440536" name="rez_cmp_local_custom_drawable_79111122810429028002" stackId="2" startPc="268440347"/>
+        <entry endPc="268440536" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268440347"/>
+    </localVars>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="MilitaryFormatTitle"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="starfield_17"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Flag"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="starfield_12"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorWhite"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ForegroundColorTitle"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="starfield_10"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorLightGray"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlue"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="starfield_14"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="starfield_24"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BackgroundColorTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorRed"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorDarkGray"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Pedestrian"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlack"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="87" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/Rez" offset="1707" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/starfieldView" offset="1786" parentId="globals" symbolId="starfieldView" type="class"/>
+        <dataEntry label="globals/Background" offset="1881" parentId="globals" symbolId="Background" type="class"/>
+        <dataEntry label="globals/starfieldApp" offset="1936" parentId="globals" symbolId="starfieldApp" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="2015" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="2070" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="2109" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Fonts" offset="2140" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="2211" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/JsonData" offset="2322" parentId="Rez" symbolId="JsonData" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435705" name="stepBarInit" startPc="268435566">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435729" name="&lt;init&gt;" parent="Rez" startPc="268435706">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436020" name="drawTime" startPc="268435730">
+            <param id="dc"/>
+            <param id="timeViewElement"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436039" name="&lt;init&gt;" parent="starfieldView" startPc="268436021">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onExitSleep" parent="starfieldView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="starfieldView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436157" name="onLayout" parent="starfieldView" startPc="268436040">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onEnterSleep" parent="starfieldView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436178" name="initialize" parent="starfieldView" startPc="268436158">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="starfieldView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436347" name="onUpdate" parent="starfieldView" startPc="268436179">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436381" name="updateComputedValues" startPc="268436348">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436528" name="drawOutlineCircle" startPc="268436382">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436592" name="getHoursRatio" startPc="268436529">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436991" name="drawClockHourHand" startPc="268436593">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437153" name="drawDayOfTheWeek" startPc="268436992">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437169" name="getStepsBarMargin" startPc="268437154">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437207" name="getBatteryRatio" startPc="268437170">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437606" name="drawClockSecondHand" startPc="268437208">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437860" name="drawTimeMarkers" startPc="268437607">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437879" name="&lt;init&gt;" parent="Background" startPc="268437861">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437925" name="initialize" parent="Background" startPc="268437880">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437982" name="draw" parent="Background" startPc="268437926">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438159" name="drawCircleTicks" startPc="268437983">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438209" name="drawPedestrian" startPc="268438160">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438406" name="drawDayOfTheMonth" startPc="268438210">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438830" name="drawStepsBar" startPc="268438407">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438873" name="getStepsGoalEndAngle" startPc="268438831">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438926" name="drawClockHands" startPc="268438874">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438945" name="&lt;init&gt;" parent="starfieldApp" startPc="268438927">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438948" name="onStart" parent="starfieldApp" startPc="268438946">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438967" name="onSettingsChanged" parent="starfieldApp" startPc="268438949">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439010" name="getInitialView" parent="starfieldApp" startPc="268438968">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439031" name="initialize" parent="starfieldApp" startPc="268439011">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439034" name="onStop" parent="starfieldApp" startPc="268439032">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439087" name="drawBasicLayout" startPc="268439035">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439141" name="timeInfoInit" startPc="268439088">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439195" name="timeInit" startPc="268439142">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439270" name="getStepsGoalRatio" startPc="268439196">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439323" name="drawFullStepsBar" startPc="268439271">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439382" name="drawFlag" startPc="268439324">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439781" name="drawClockMinuteHand" startPc="268439383">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439807" name="getApp" startPc="268439782">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439871" name="getMinutesRatio" startPc="268439808">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439935" name="getSecondsRatio" startPc="268439872">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440228" name="drawBatteryIndicator" startPc="268439936">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440282" name="basicLayoutInit" startPc="268440229">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440334" name="initComputedValues" startPc="268440283">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Menus">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440536" name="WatchFace" parent="Layouts" startPc="268440335">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

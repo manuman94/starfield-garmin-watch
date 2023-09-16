@@ -1,0 +1,302 @@
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc"; @line = 2; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc"; @line = 3; ]
+import Toybox.Lang;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc"; @line = 4; ]
+using Toybox.ActivityMonitor;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc"; @line = 6; @position = 6; ]
+const STEPS_BAR_STROKE_WIDTH as Number = 30;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc"; @line = 7; @position = 6; ]
+const STEPS_BAR_OFFSET as Number = 3;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc"; @line = 9; @position = 4; ]
+var pedestrianDrawable;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc"; @line = 10; @position = 4; ]
+var flagDrawable;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc"; @line = 11; @position = 4; ]
+var stepsFont;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc"; @line = 13; ]
+function stepBarInit() {
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_13_23_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc" 14 4 ]
+    %tmp.1 = getm $.Toybox.WatchUi;
+    %tmp.2 = getv function %tmp.1 :loadResource;
+    %tmp.4 = getv ? :Rez;
+    %tmp.5 = getv %tmp.4 :Fonts;
+    %tmp.6 = getv %tmp.5 :starfield_10;
+    %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
+    putv self :stepsFont %tmp.7;
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc" 15 4 ]
+    %tmp.8 = getm $.Toybox.Application;
+    %tmp.9 = getv function %tmp.8 :loadResource;
+    %tmp.11 = getv ? :Rez;
+    %tmp.12 = getv %tmp.11 :Drawables;
+    %tmp.13 = getv %tmp.12 :Pedestrian;
+    %tmp.14 = invoke %tmp.8 %tmp.9(%tmp.13);
+    putv self :pedestrianDrawable %tmp.14;
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc" 16 4 ]
+    %tmp.15 = getm $.Toybox.Application;
+    %tmp.16 = getv function %tmp.15 :loadResource;
+    %tmp.18 = getv ? :Rez;
+    %tmp.19 = getv %tmp.18 :Drawables;
+    %tmp.20 = getv %tmp.19 :Flag;
+    %tmp.21 = invoke %tmp.15 %tmp.16(%tmp.20);
+    putv self :flagDrawable %tmp.21;
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_13_23_stop:
+}
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc"; @line = 19; ]
+function drawFullStepsBar(dc as Dc) {
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_19_36_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc" 20 4 ]
+    %tmp.1 = self;
+    %tmp.2 = getv function %tmp.1 :drawStepsBar;
+    %tmp.4 = lgetv %dc;
+    invoke %tmp.1 %tmp.2(%tmp.4);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc" 21 4 ]
+    %tmp.5 = self;
+    %tmp.6 = getv function %tmp.5 :drawPedestrian;
+    %tmp.8 = lgetv %dc;
+    invoke %tmp.5 %tmp.6(%tmp.8);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc" 22 4 ]
+    %tmp.9 = self;
+    %tmp.10 = getv function %tmp.9 :drawFlag;
+    %tmp.12 = lgetv %dc;
+    invoke %tmp.9 %tmp.10(%tmp.12);
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_19_36_stop:
+}
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc"; @line = 25; ]
+function drawStepsBar(dc as Dc) {
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_25_32_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc" 27 4 ]
+    %tmp.1 = lgetv %dc;
+    %tmp.2 = getv function %tmp.1 :setPenWidth;
+    %tmp.4 = getv ? :STEPS_BAR_STROKE_WIDTH;
+    invoke %tmp.1 %tmp.2(%tmp.4);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc" 28 4 ]
+    %tmp.5 = lgetv %dc;
+    %tmp.6 = getv function %tmp.5 :setColor;
+    %tmp.7 = self;
+    %tmp.8 = getv function %tmp.7 :getApp;
+    %tmp.9 = invoke %tmp.7 %tmp.8();
+    %tmp.10 = getv function %tmp.9 :getProperty;
+    %tmp.11 = "DarkGreen";
+    %tmp.12 = invoke %tmp.9 %tmp.10(%tmp.11);
+    %tmp.13 = as %tmp.12 Number;
+    %tmp.14 = self;
+    %tmp.15 = getv function %tmp.14 :getApp;
+    %tmp.16 = invoke %tmp.14 %tmp.15();
+    %tmp.17 = getv function %tmp.16 :getProperty;
+    %tmp.18 = "DarkGreen";
+    %tmp.19 = invoke %tmp.16 %tmp.17(%tmp.18);
+    %tmp.20 = as %tmp.19 Number;
+    invoke %tmp.5 %tmp.6(%tmp.13, %tmp.20);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc" 29 4 ]
+    %tmp.21 = lgetv %dc;
+    %tmp.22 = getv function %tmp.21 :drawArc;
+    %tmp.24 = getv ? :screenRadius;
+    %tmp.26 = getv ? :screenRadius;
+    %tmp.28 = getv ? :screenRadius;
+    %tmp.29 = self;
+    %tmp.30 = getv function %tmp.29 :getStepsBarMargin;
+    %tmp.31 = invoke %tmp.29 %tmp.30();
+    %tmp.32 = sub %tmp.28 %tmp.31;
+    %tmp.33 = getm $.Toybox.Graphics;
+    %tmp.34 = getv %tmp.33 :ARC_COUNTER_CLOCKWISE;
+    %tmp.35 = 180;
+    %tmp.36 = 0;
+    invoke %tmp.21 %tmp.22(%tmp.24, %tmp.26, %tmp.32, %tmp.34, %tmp.35, %tmp.36);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc" 32 4 ]
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_32_4_if_stmt:
+    %tmp.37 = self;
+    %tmp.38 = getv function %tmp.37 :getStepsGoalEndAngle;
+    %tmp.39 = invoke %tmp.37 %tmp.38();
+    %tmp.40 = 180;
+    %tmp.41 = gt %tmp.39 %tmp.40;
+    bf %tmp.41 @C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_32_4_if_end;
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_32_4_if_true:
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_32_40_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc" 33 8 ]
+    %tmp.42 = lgetv %dc;
+    %tmp.43 = getv function %tmp.42 :setPenWidth;
+    %tmp.45 = getv ? :STEPS_BAR_STROKE_WIDTH;
+    invoke %tmp.42 %tmp.43(%tmp.45);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc" 34 8 ]
+    %tmp.46 = lgetv %dc;
+    %tmp.47 = getv function %tmp.46 :setColor;
+    %tmp.48 = self;
+    %tmp.49 = getv function %tmp.48 :getApp;
+    %tmp.50 = invoke %tmp.48 %tmp.49();
+    %tmp.51 = getv function %tmp.50 :getProperty;
+    %tmp.52 = "LightGreen";
+    %tmp.53 = invoke %tmp.50 %tmp.51(%tmp.52);
+    %tmp.54 = as %tmp.53 Number;
+    %tmp.55 = self;
+    %tmp.56 = getv function %tmp.55 :getApp;
+    %tmp.57 = invoke %tmp.55 %tmp.56();
+    %tmp.58 = getv function %tmp.57 :getProperty;
+    %tmp.59 = "LightGreen";
+    %tmp.60 = invoke %tmp.57 %tmp.58(%tmp.59);
+    %tmp.61 = as %tmp.60 Number;
+    invoke %tmp.46 %tmp.47(%tmp.54, %tmp.61);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc" 35 8 ]
+    %tmp.62 = lgetv %dc;
+    %tmp.63 = getv function %tmp.62 :drawArc;
+    %tmp.65 = getv ? :screenRadius;
+    %tmp.67 = getv ? :screenRadius;
+    %tmp.69 = getv ? :screenRadius;
+    %tmp.70 = self;
+    %tmp.71 = getv function %tmp.70 :getStepsBarMargin;
+    %tmp.72 = invoke %tmp.70 %tmp.71();
+    %tmp.73 = sub %tmp.69 %tmp.72;
+    %tmp.74 = getm $.Toybox.Graphics;
+    %tmp.75 = getv %tmp.74 :ARC_COUNTER_CLOCKWISE;
+    %tmp.76 = 180;
+    %tmp.77 = self;
+    %tmp.78 = getv function %tmp.77 :getStepsGoalEndAngle;
+    %tmp.79 = invoke %tmp.77 %tmp.78();
+    invoke %tmp.62 %tmp.63(%tmp.65, %tmp.67, %tmp.73, %tmp.75, %tmp.76, %tmp.79);
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_32_40_stop:
+    goto @C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_32_4_if_end;
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_32_4_if_end:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc" 38 4 ]
+    %tmp.80 = lgetv %dc;
+    %tmp.81 = getv function %tmp.80 :setColor;
+    %tmp.82 = self;
+    %tmp.83 = getv function %tmp.82 :getApp;
+    %tmp.84 = invoke %tmp.82 %tmp.83();
+    %tmp.85 = getv function %tmp.84 :getProperty;
+    %tmp.86 = "BackgroundColor";
+    %tmp.87 = invoke %tmp.84 %tmp.85(%tmp.86);
+    %tmp.88 = as %tmp.87 Number;
+    %tmp.89 = getm $.Toybox.Graphics;
+    %tmp.90 = getv %tmp.89 :COLOR_TRANSPARENT;
+    invoke %tmp.80 %tmp.81(%tmp.88, %tmp.90);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc" 39 4 ]
+    %tmp.91 = lgetv %dc;
+    %tmp.92 = getv function %tmp.91 :drawText;
+    %tmp.94 = getv ? :OUTLINE_CIRCLE_MARGIN;
+    %tmp.96 = getv ? :OUTLINE_CIRCLE_STROKE_WIDTH;
+    %tmp.97 = add %tmp.94 %tmp.96;
+    %tmp.98 = 18;
+    %tmp.99 = add %tmp.97 %tmp.98;
+    %tmp.101 = getv ? :screenRadius;
+    %tmp.102 = 5;
+    %tmp.103 = add %tmp.101 %tmp.102;
+    %tmp.105 = getv ? :stepsFont;
+    %tmp.107 = getv ? :activityInfo;
+    %tmp.108 = getv %tmp.107 :steps;
+    %tmp.109 = getm $.Toybox.Graphics;
+    %tmp.110 = getv %tmp.109 :TEXT_JUSTIFY_CENTER;
+    %tmp.111 = getm $.Toybox.Graphics;
+    %tmp.112 = getv %tmp.111 :TEXT_JUSTIFY_VCENTER;
+    %tmp.113 = bitor %tmp.110 %tmp.112;
+    invoke %tmp.91 %tmp.92(%tmp.99, %tmp.103, %tmp.105, %tmp.108, %tmp.113);
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_25_32_stop:
+}
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc"; @line = 48; ]
+function getStepsBarMargin() {
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_48_29_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc" 49 4 ]
+    %tmp.2 = getv ? :OUTLINE_CIRCLE_MARGIN;
+    %tmp.4 = getv ? :OUTLINE_CIRCLE_STROKE_WIDTH;
+    %tmp.5 = add %tmp.2 %tmp.4;
+    %tmp.7 = getv ? :STEPS_BAR_STROKE_WIDTH;
+    %tmp.8 = 2;
+    %tmp.9 = div %tmp.7 %tmp.8;
+    %tmp.10 = add %tmp.5 %tmp.9;
+    %tmp.12 = getv ? :STEPS_BAR_OFFSET;
+    %tmp.13 = add %tmp.10 %tmp.12;
+    ret %tmp.13;
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_48_29_stop:
+}
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc"; @line = 52; ]
+function getStepsGoalRatio() {
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_52_29_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc" 53 4 ]
+    [ "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_52_29_start" "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_52_29_stop" ]
+    %stepsGoal.1 = local;
+    %tmp.2 = getv ? :activityInfo;
+    %tmp.3 = getv %tmp.2 :steps;
+    %tmp.5 = getv ? :activityInfo;
+    %tmp.6 = getv %tmp.5 :stepGoal;
+    %tmp.7 = getv function %tmp.6 :toFloat;
+    %tmp.8 = invoke %tmp.6 %tmp.7();
+    %tmp.9 = div %tmp.3 %tmp.8;
+    lputv %stepsGoal.1 %tmp.9;
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc" 54 4 ]
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_54_4_if_stmt:
+    %tmp.11 = lgetv %stepsGoal.1;
+    %tmp.12 = 1;
+    %tmp.13 = gt %tmp.11 %tmp.12;
+    bf %tmp.13 @C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_54_4_if_end;
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_54_4_if_true:
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_54_25_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc" 55 8 ]
+    %tmp.14 = 1;
+    ret %tmp.14;
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_54_25_stop:
+    goto @C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_54_4_if_end;
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_54_4_if_end:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc" 57 4 ]
+    %tmp.16 = lgetv %stepsGoal.1;
+    ret %tmp.16;
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_52_29_stop:
+}
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc"; @line = 60; ]
+function getStepsGoalEndAngle() {
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_60_32_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc" 61 4 ]
+    %tmp.1 = 180;
+    %tmp.2 = self;
+    %tmp.3 = getv function %tmp.2 :getStepsGoalRatio;
+    %tmp.4 = invoke %tmp.2 %tmp.3();
+    %tmp.5 = 180;
+    %tmp.6 = mul %tmp.4 %tmp.5;
+    %tmp.7 = add %tmp.1 %tmp.6;
+    %tmp.8 = getv function %tmp.7 :toNumber;
+    %tmp.9 = invoke %tmp.7 %tmp.8();
+    ret %tmp.9;
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_60_32_stop:
+}
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc"; @line = 64; ]
+function drawPedestrian(dc as Dc) {
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_64_34_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc" 65 4 ]
+    %tmp.1 = lgetv %dc;
+    %tmp.2 = getv function %tmp.1 :drawBitmap;
+    %tmp.4 = getv ? :OUTLINE_CIRCLE_MARGIN;
+    %tmp.6 = getv ? :OUTLINE_CIRCLE_STROKE_WIDTH;
+    %tmp.7 = add %tmp.4 %tmp.6;
+    %tmp.8 = 10;
+    %tmp.9 = add %tmp.7 %tmp.8;
+    %tmp.11 = getv ? :screenRadius;
+    %tmp.12 = 28;
+    %tmp.13 = sub %tmp.11 %tmp.12;
+    %tmp.15 = getv ? :pedestrianDrawable;
+    invoke %tmp.1 %tmp.2(%tmp.9, %tmp.13, %tmp.15);
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_64_34_stop:
+}
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc"; @line = 72; ]
+function drawFlag(dc as Dc) {
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_72_28_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc" 73 4 ]
+    %tmp.1 = lgetv %dc;
+    %tmp.2 = getv function %tmp.1 :drawBitmap;
+    %tmp.4 = getv ? :screenWidth;
+    %tmp.6 = getv ? :OUTLINE_CIRCLE_MARGIN;
+    %tmp.8 = getv ? :OUTLINE_CIRCLE_STROKE_WIDTH;
+    %tmp.9 = add %tmp.6 %tmp.8;
+    %tmp.10 = 32;
+    %tmp.11 = add %tmp.9 %tmp.10;
+    %tmp.12 = sub %tmp.4 %tmp.11;
+    %tmp.14 = getv ? :screenRadius;
+    %tmp.15 = 17;
+    %tmp.16 = sub %tmp.14 %tmp.15;
+    %tmp.18 = getv ? :flagDrawable;
+    invoke %tmp.1 %tmp.2(%tmp.12, %tmp.16, %tmp.18);
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_stepsBar_mc_72_28_stop:
+}
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\stepsBar.mc"; @line = 1; ]
+<init> {
+}

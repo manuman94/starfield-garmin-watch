@@ -1,0 +1,146 @@
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\time.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\time.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\time.mc"; @line = 3; ]
+import Toybox.System;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\time.mc"; @line = 4; ]
+import Toybox.WatchUi;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\time.mc"; @line = 6; @position = 4; ]
+var timeFont;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\time.mc"; @line = 8; @position = 6; ]
+const TIME_FONT_SIZE as Number = 6;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\time.mc"; @line = 10; ]
+function timeInit() {
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_10_20_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\time.mc" 11 2 ]
+    %tmp.1 = getm $.Toybox.WatchUi;
+    %tmp.2 = getv function %tmp.1 :loadResource;
+    %tmp.4 = getv ? :Rez;
+    %tmp.5 = getv %tmp.4 :Fonts;
+    %tmp.6 = getv %tmp.5 :starfield_24;
+    %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
+    putv self :timeFont %tmp.7;
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_10_20_stop:
+}
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\time.mc"; @line = 14; ]
+function drawTime(dc as Dc, timeViewElement as Text) {
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_14_53_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\time.mc" 16 4 ]
+    [ "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_14_53_start" "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_14_53_stop" ]
+    %timeFormat.1 = local;
+    %tmp.1 = "$1$:$2$";
+    lputv %timeFormat.1 %tmp.1;
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\time.mc" 17 4 ]
+    [ "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_14_53_start" "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_14_53_stop" ]
+    %clockTime.2 = local;
+    %tmp.2 = getm $.Toybox.System;
+    %tmp.3 = getv function %tmp.2 :getClockTime;
+    %tmp.4 = invoke %tmp.2 %tmp.3();
+    lputv %clockTime.2 %tmp.4;
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\time.mc" 18 4 ]
+    [ "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_14_53_start" "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_14_53_stop" ]
+    %hours.3 = local;
+    %tmp.5 = lgetv %clockTime.2;
+    %tmp.6 = getv %tmp.5 :hour;
+    lputv %hours.3 %tmp.6;
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\time.mc" 19 4 ]
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_19_4_if_stmt:
+    %tmp.7 = getm $.Toybox.System;
+    %tmp.8 = getv function %tmp.7 :getDeviceSettings;
+    %tmp.9 = invoke %tmp.7 %tmp.8();
+    %tmp.10 = getv %tmp.9 :is24Hour;
+    %tmp.11 = not %tmp.10;
+    bf %tmp.11 @C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_19_4_if_false;
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_19_4_if_true:
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_19_46_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\time.mc" 20 8 ]
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_20_8_if_stmt:
+    %tmp.13 = lgetv %hours.3;
+    %tmp.14 = 12;
+    %tmp.15 = gt %tmp.13 %tmp.14;
+    bf %tmp.15 @C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_20_8_if_end;
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_20_8_if_true:
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_20_24_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\time.mc" 21 12 ]
+    %tmp.17 = lgetv %hours.3;
+    %tmp.18 = 12;
+    %tmp.19 = sub %tmp.17 %tmp.18;
+    lputv %hours.3 %tmp.19;
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_20_24_stop:
+    goto @C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_20_8_if_end;
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_20_8_if_end:
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_19_46_stop:
+    goto @C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_19_4_if_end;
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_19_4_if_false:
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_23_11_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\time.mc" 24 8 ]
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_24_8_if_stmt:
+    %tmp.20 = self;
+    %tmp.21 = getv function %tmp.20 :getApp;
+    %tmp.22 = invoke %tmp.20 %tmp.21();
+    %tmp.23 = getv function %tmp.22 :getProperty;
+    %tmp.24 = "UseMilitaryFormat";
+    %tmp.25 = invoke %tmp.22 %tmp.23(%tmp.24);
+    bf %tmp.25 @C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_24_8_if_end;
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_24_8_if_true:
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_24_55_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\time.mc" 25 12 ]
+    %tmp.26 = "$1$$2$";
+    lputv %timeFormat.1 %tmp.26;
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\time.mc" 26 12 ]
+    %tmp.27 = lgetv %hours.3;
+    %tmp.28 = getv function %tmp.27 :format;
+    %tmp.29 = "%02d";
+    %tmp.30 = invoke %tmp.27 %tmp.28(%tmp.29);
+    lputv %hours.3 %tmp.30;
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_24_55_stop:
+    goto @C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_24_8_if_end;
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_24_8_if_end:
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_23_11_stop:
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_19_4_if_end:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\time.mc" 29 4 ]
+    [ "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_14_53_start" "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_14_53_stop" ]
+    %timeString.4 = local;
+    %tmp.31 = getm $.Toybox.Lang;
+    %tmp.32 = getv function %tmp.31 :format;
+    %tmp.34 = lgetv %timeFormat.1;
+    %tmp.35 = newa 2;
+    %tmp.37 = lgetv %hours.3;
+    %tmp.38 = dup %tmp.35;
+    %tmp.39 = aputv %tmp.38 0 %tmp.37;
+    %tmp.40 = lgetv %clockTime.2;
+    %tmp.41 = getv %tmp.40 :min;
+    %tmp.42 = getv function %tmp.41 :format;
+    %tmp.43 = "%02d";
+    %tmp.44 = invoke %tmp.41 %tmp.42(%tmp.43);
+    %tmp.45 = dup %tmp.39;
+    %tmp.46 = aputv %tmp.45 1 %tmp.44;
+    %tmp.47 = invoke %tmp.31 %tmp.32(%tmp.34, %tmp.46);
+    lputv %timeString.4 %tmp.47;
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\time.mc" 32 4 ]
+    %tmp.48 = lgetv %timeViewElement;
+    %tmp.49 = getv function %tmp.48 :setColor;
+    %tmp.50 = self;
+    %tmp.51 = getv function %tmp.50 :getApp;
+    %tmp.52 = invoke %tmp.50 %tmp.51();
+    %tmp.53 = getv function %tmp.52 :getProperty;
+    %tmp.54 = "LightGreen";
+    %tmp.55 = invoke %tmp.52 %tmp.53(%tmp.54);
+    %tmp.56 = as %tmp.55 Number;
+    invoke %tmp.48 %tmp.49(%tmp.56);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\time.mc" 33 4 ]
+    %tmp.57 = lgetv %timeViewElement;
+    %tmp.58 = getv function %tmp.57 :setFont;
+    %tmp.60 = getv ? :timeFont;
+    invoke %tmp.57 %tmp.58(%tmp.60);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\time.mc" 34 4 ]
+    %tmp.61 = lgetv %timeViewElement;
+    %tmp.62 = getv function %tmp.61 :setText;
+    %tmp.64 = lgetv %timeString.4;
+    invoke %tmp.61 %tmp.62(%tmp.64);
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_time_mc_14_53_stop:
+}
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\time.mc"; @line = 1; ]
+<init> {
+}

@@ -1,0 +1,490 @@
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc"; @line = 3; ]
+using Toybox.Time;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc"; @line = 4; ]
+using Toybox.Time.Gregorian;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc"; @line = 6; ]
+function drawClockHands(dc as Dc) {
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_6_34_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 7 4 ]
+    %tmp.1 = self;
+    %tmp.2 = getv function %tmp.1 :drawClockSecondHand;
+    %tmp.4 = lgetv %dc;
+    invoke %tmp.1 %tmp.2(%tmp.4);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 8 4 ]
+    %tmp.5 = self;
+    %tmp.6 = getv function %tmp.5 :drawClockMinuteHand;
+    %tmp.8 = lgetv %dc;
+    invoke %tmp.5 %tmp.6(%tmp.8);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 9 4 ]
+    %tmp.9 = self;
+    %tmp.10 = getv function %tmp.9 :drawClockHourHand;
+    %tmp.12 = lgetv %dc;
+    invoke %tmp.9 %tmp.10(%tmp.12);
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_6_34_stop:
+}
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc"; @line = 12; ]
+function drawClockSecondHand(dc as Dc) {
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_12_39_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 13 4 ]
+    [ "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_12_39_start" "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_12_39_stop" ]
+    %secondsRatio.1 = local;
+    %tmp.1 = self;
+    %tmp.2 = getv function %tmp.1 :getSecondsRatio;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    lputv %secondsRatio.1 %tmp.3;
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 14 4 ]
+    [ "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_12_39_start" "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_12_39_stop" ]
+    %secondHandAngle.2 = local;
+    %tmp.5 = lgetv %secondsRatio.1;
+    %tmp.6 = 360;
+    %tmp.7 = mul %tmp.5 %tmp.6;
+    %tmp.8 = getv function %tmp.7 :toNumber;
+    %tmp.9 = invoke %tmp.7 %tmp.8();
+    lputv %secondHandAngle.2 %tmp.9;
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 15 4 ]
+    %tmp.10 = lgetv %dc;
+    %tmp.11 = getv function %tmp.10 :setColor;
+    %tmp.12 = self;
+    %tmp.13 = getv function %tmp.12 :getApp;
+    %tmp.14 = invoke %tmp.12 %tmp.13();
+    %tmp.15 = getv function %tmp.14 :getProperty;
+    %tmp.16 = "LightRed";
+    %tmp.17 = invoke %tmp.14 %tmp.15(%tmp.16);
+    %tmp.18 = as %tmp.17 Number;
+    %tmp.19 = self;
+    %tmp.20 = getv function %tmp.19 :getApp;
+    %tmp.21 = invoke %tmp.19 %tmp.20();
+    %tmp.22 = getv function %tmp.21 :getProperty;
+    %tmp.23 = "LightRed";
+    %tmp.24 = invoke %tmp.21 %tmp.22(%tmp.23);
+    %tmp.25 = as %tmp.24 Number;
+    invoke %tmp.10 %tmp.11(%tmp.18, %tmp.25);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 16 4 ]
+    %tmp.26 = lgetv %dc;
+    %tmp.27 = getv function %tmp.26 :setPenWidth;
+    %tmp.29 = getv ? :OUTLINE_CIRCLE_MARGIN;
+    invoke %tmp.26 %tmp.27(%tmp.29);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 17 4 ]
+    %tmp.30 = lgetv %dc;
+    %tmp.31 = getv function %tmp.30 :drawArc;
+    %tmp.33 = getv ? :screenRadius;
+    %tmp.35 = getv ? :screenRadius;
+    %tmp.37 = getv ? :screenRadius;
+    %tmp.39 = getv ? :OUTLINE_CIRCLE_MARGIN;
+    %tmp.40 = sub %tmp.37 %tmp.39;
+    %tmp.42 = getv ? :OUTLINE_CIRCLE_MARGIN;
+    %tmp.43 = 2;
+    %tmp.44 = div %tmp.42 %tmp.43;
+    %tmp.45 = add %tmp.40 %tmp.44;
+    %tmp.46 = getm $.Toybox.Graphics;
+    %tmp.47 = getv %tmp.46 :ARC_COUNTER_CLOCKWISE;
+    %tmp.49 = lgetv %secondHandAngle.2;
+    %tmp.50 = sub 0 %tmp.49;
+    %tmp.51 = 1;
+    %tmp.52 = sub %tmp.50 %tmp.51;
+    %tmp.53 = 90;
+    %tmp.54 = add %tmp.52 %tmp.53;
+    %tmp.56 = lgetv %secondHandAngle.2;
+    %tmp.57 = sub 0 %tmp.56;
+    %tmp.58 = 1;
+    %tmp.59 = add %tmp.57 %tmp.58;
+    %tmp.60 = 90;
+    %tmp.61 = add %tmp.59 %tmp.60;
+    invoke %tmp.30 %tmp.31(%tmp.33, %tmp.35, %tmp.45, %tmp.47, %tmp.54, %tmp.61);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 18 4 ]
+    [ "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_12_39_start" "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_12_39_stop" ]
+    %highlighPenWidth.3 = local;
+    %tmp.63 = getv ? :OUTLINE_CIRCLE_MARGIN;
+    %tmp.64 = 15;
+    %tmp.65 = sub %tmp.63 %tmp.64;
+    lputv %highlighPenWidth.3 %tmp.65;
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 19 4 ]
+    %tmp.66 = lgetv %dc;
+    %tmp.67 = getv function %tmp.66 :setColor;
+    %tmp.68 = self;
+    %tmp.69 = getv function %tmp.68 :getApp;
+    %tmp.70 = invoke %tmp.68 %tmp.69();
+    %tmp.71 = getv function %tmp.70 :getProperty;
+    %tmp.72 = "DarkRed";
+    %tmp.73 = invoke %tmp.70 %tmp.71(%tmp.72);
+    %tmp.74 = as %tmp.73 Number;
+    %tmp.75 = self;
+    %tmp.76 = getv function %tmp.75 :getApp;
+    %tmp.77 = invoke %tmp.75 %tmp.76();
+    %tmp.78 = getv function %tmp.77 :getProperty;
+    %tmp.79 = "DarkRed";
+    %tmp.80 = invoke %tmp.77 %tmp.78(%tmp.79);
+    %tmp.81 = as %tmp.80 Number;
+    invoke %tmp.66 %tmp.67(%tmp.74, %tmp.81);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 20 4 ]
+    %tmp.82 = lgetv %dc;
+    %tmp.83 = getv function %tmp.82 :setPenWidth;
+    %tmp.85 = lgetv %highlighPenWidth.3;
+    invoke %tmp.82 %tmp.83(%tmp.85);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 21 4 ]
+    %tmp.86 = lgetv %dc;
+    %tmp.87 = getv function %tmp.86 :drawArc;
+    %tmp.89 = getv ? :screenRadius;
+    %tmp.91 = getv ? :screenRadius;
+    %tmp.93 = getv ? :screenRadius;
+    %tmp.95 = lgetv %highlighPenWidth.3;
+    %tmp.96 = sub %tmp.93 %tmp.95;
+    %tmp.98 = lgetv %highlighPenWidth.3;
+    %tmp.99 = 2;
+    %tmp.100 = div %tmp.98 %tmp.99;
+    %tmp.101 = add %tmp.96 %tmp.100;
+    %tmp.102 = 2;
+    %tmp.103 = add %tmp.101 %tmp.102;
+    %tmp.104 = getm $.Toybox.Graphics;
+    %tmp.105 = getv %tmp.104 :ARC_COUNTER_CLOCKWISE;
+    %tmp.107 = lgetv %secondHandAngle.2;
+    %tmp.108 = sub 0 %tmp.107;
+    %tmp.109 = 1;
+    %tmp.110 = sub %tmp.108 %tmp.109;
+    %tmp.111 = 90;
+    %tmp.112 = add %tmp.110 %tmp.111;
+    %tmp.114 = lgetv %secondHandAngle.2;
+    %tmp.115 = sub 0 %tmp.114;
+    %tmp.116 = 1;
+    %tmp.117 = add %tmp.115 %tmp.116;
+    %tmp.118 = 90;
+    %tmp.119 = add %tmp.117 %tmp.118;
+    invoke %tmp.86 %tmp.87(%tmp.89, %tmp.91, %tmp.103, %tmp.105, %tmp.112, %tmp.119);
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_12_39_stop:
+}
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc"; @line = 24; ]
+function getSecondsRatio() {
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_24_27_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 25 4 ]
+    [ "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_24_27_start" "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_24_27_stop" ]
+    %today.1 = local;
+    %tmp.1 = getm $.Toybox.Time.Gregorian;
+    %tmp.2 = getv function %tmp.1 :info;
+    %tmp.3 = getm $.Toybox.Time;
+    %tmp.4 = getv function %tmp.3 :now;
+    %tmp.5 = invoke %tmp.3 %tmp.4();
+    %tmp.6 = getm $.Toybox.Time;
+    %tmp.7 = getv %tmp.6 :FORMAT_LONG;
+    %tmp.8 = invoke %tmp.1 %tmp.2(%tmp.5, %tmp.7);
+    lputv %today.1 %tmp.8;
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 26 4 ]
+    %tmp.9 = lgetv %today.1;
+    %tmp.10 = getv %tmp.9 :sec;
+    %tmp.11 = 60.0;
+    %tmp.12 = div %tmp.10 %tmp.11;
+    ret %tmp.12;
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_24_27_stop:
+}
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc"; @line = 29; ]
+function drawClockMinuteHand(dc as Dc) {
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_29_39_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 30 4 ]
+    [ "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_29_39_start" "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_29_39_stop" ]
+    %minutesRatio.1 = local;
+    %tmp.1 = self;
+    %tmp.2 = getv function %tmp.1 :getMinutesRatio;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    lputv %minutesRatio.1 %tmp.3;
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 31 4 ]
+    [ "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_29_39_start" "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_29_39_stop" ]
+    %minuteHandAngle.2 = local;
+    %tmp.5 = lgetv %minutesRatio.1;
+    %tmp.6 = 360;
+    %tmp.7 = mul %tmp.5 %tmp.6;
+    %tmp.8 = getv function %tmp.7 :toNumber;
+    %tmp.9 = invoke %tmp.7 %tmp.8();
+    lputv %minuteHandAngle.2 %tmp.9;
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 32 4 ]
+    %tmp.10 = lgetv %dc;
+    %tmp.11 = getv function %tmp.10 :setColor;
+    %tmp.12 = self;
+    %tmp.13 = getv function %tmp.12 :getApp;
+    %tmp.14 = invoke %tmp.12 %tmp.13();
+    %tmp.15 = getv function %tmp.14 :getProperty;
+    %tmp.16 = "LightBlue";
+    %tmp.17 = invoke %tmp.14 %tmp.15(%tmp.16);
+    %tmp.18 = as %tmp.17 Number;
+    %tmp.19 = self;
+    %tmp.20 = getv function %tmp.19 :getApp;
+    %tmp.21 = invoke %tmp.19 %tmp.20();
+    %tmp.22 = getv function %tmp.21 :getProperty;
+    %tmp.23 = "LightBlue";
+    %tmp.24 = invoke %tmp.21 %tmp.22(%tmp.23);
+    %tmp.25 = as %tmp.24 Number;
+    invoke %tmp.10 %tmp.11(%tmp.18, %tmp.25);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 33 4 ]
+    %tmp.26 = lgetv %dc;
+    %tmp.27 = getv function %tmp.26 :setPenWidth;
+    %tmp.29 = getv ? :OUTLINE_CIRCLE_MARGIN;
+    invoke %tmp.26 %tmp.27(%tmp.29);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 34 4 ]
+    %tmp.30 = lgetv %dc;
+    %tmp.31 = getv function %tmp.30 :drawArc;
+    %tmp.33 = getv ? :screenRadius;
+    %tmp.35 = getv ? :screenRadius;
+    %tmp.37 = getv ? :screenRadius;
+    %tmp.39 = getv ? :OUTLINE_CIRCLE_MARGIN;
+    %tmp.40 = sub %tmp.37 %tmp.39;
+    %tmp.42 = getv ? :OUTLINE_CIRCLE_MARGIN;
+    %tmp.43 = 2;
+    %tmp.44 = div %tmp.42 %tmp.43;
+    %tmp.45 = add %tmp.40 %tmp.44;
+    %tmp.46 = getm $.Toybox.Graphics;
+    %tmp.47 = getv %tmp.46 :ARC_COUNTER_CLOCKWISE;
+    %tmp.49 = lgetv %minuteHandAngle.2;
+    %tmp.50 = sub 0 %tmp.49;
+    %tmp.51 = 2;
+    %tmp.52 = sub %tmp.50 %tmp.51;
+    %tmp.53 = 90;
+    %tmp.54 = add %tmp.52 %tmp.53;
+    %tmp.56 = lgetv %minuteHandAngle.2;
+    %tmp.57 = sub 0 %tmp.56;
+    %tmp.58 = 2;
+    %tmp.59 = add %tmp.57 %tmp.58;
+    %tmp.60 = 90;
+    %tmp.61 = add %tmp.59 %tmp.60;
+    invoke %tmp.30 %tmp.31(%tmp.33, %tmp.35, %tmp.45, %tmp.47, %tmp.54, %tmp.61);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 35 4 ]
+    [ "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_29_39_start" "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_29_39_stop" ]
+    %highlighPenWidth.3 = local;
+    %tmp.63 = getv ? :OUTLINE_CIRCLE_MARGIN;
+    %tmp.64 = 15;
+    %tmp.65 = sub %tmp.63 %tmp.64;
+    lputv %highlighPenWidth.3 %tmp.65;
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 36 4 ]
+    %tmp.66 = lgetv %dc;
+    %tmp.67 = getv function %tmp.66 :setColor;
+    %tmp.68 = self;
+    %tmp.69 = getv function %tmp.68 :getApp;
+    %tmp.70 = invoke %tmp.68 %tmp.69();
+    %tmp.71 = getv function %tmp.70 :getProperty;
+    %tmp.72 = "DarkBlue";
+    %tmp.73 = invoke %tmp.70 %tmp.71(%tmp.72);
+    %tmp.74 = as %tmp.73 Number;
+    %tmp.75 = self;
+    %tmp.76 = getv function %tmp.75 :getApp;
+    %tmp.77 = invoke %tmp.75 %tmp.76();
+    %tmp.78 = getv function %tmp.77 :getProperty;
+    %tmp.79 = "DarkBlue";
+    %tmp.80 = invoke %tmp.77 %tmp.78(%tmp.79);
+    %tmp.81 = as %tmp.80 Number;
+    invoke %tmp.66 %tmp.67(%tmp.74, %tmp.81);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 37 4 ]
+    %tmp.82 = lgetv %dc;
+    %tmp.83 = getv function %tmp.82 :setPenWidth;
+    %tmp.85 = lgetv %highlighPenWidth.3;
+    invoke %tmp.82 %tmp.83(%tmp.85);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 38 4 ]
+    %tmp.86 = lgetv %dc;
+    %tmp.87 = getv function %tmp.86 :drawArc;
+    %tmp.89 = getv ? :screenRadius;
+    %tmp.91 = getv ? :screenRadius;
+    %tmp.93 = getv ? :screenRadius;
+    %tmp.95 = lgetv %highlighPenWidth.3;
+    %tmp.96 = sub %tmp.93 %tmp.95;
+    %tmp.98 = lgetv %highlighPenWidth.3;
+    %tmp.99 = 2;
+    %tmp.100 = div %tmp.98 %tmp.99;
+    %tmp.101 = add %tmp.96 %tmp.100;
+    %tmp.102 = 2;
+    %tmp.103 = add %tmp.101 %tmp.102;
+    %tmp.104 = getm $.Toybox.Graphics;
+    %tmp.105 = getv %tmp.104 :ARC_COUNTER_CLOCKWISE;
+    %tmp.107 = lgetv %minuteHandAngle.2;
+    %tmp.108 = sub 0 %tmp.107;
+    %tmp.109 = 2;
+    %tmp.110 = sub %tmp.108 %tmp.109;
+    %tmp.111 = 90;
+    %tmp.112 = add %tmp.110 %tmp.111;
+    %tmp.114 = lgetv %minuteHandAngle.2;
+    %tmp.115 = sub 0 %tmp.114;
+    %tmp.116 = 2;
+    %tmp.117 = add %tmp.115 %tmp.116;
+    %tmp.118 = 90;
+    %tmp.119 = add %tmp.117 %tmp.118;
+    invoke %tmp.86 %tmp.87(%tmp.89, %tmp.91, %tmp.103, %tmp.105, %tmp.112, %tmp.119);
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_29_39_stop:
+}
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc"; @line = 41; ]
+function getMinutesRatio() {
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_41_27_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 42 4 ]
+    [ "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_41_27_start" "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_41_27_stop" ]
+    %today.1 = local;
+    %tmp.1 = getm $.Toybox.Time.Gregorian;
+    %tmp.2 = getv function %tmp.1 :info;
+    %tmp.3 = getm $.Toybox.Time;
+    %tmp.4 = getv function %tmp.3 :now;
+    %tmp.5 = invoke %tmp.3 %tmp.4();
+    %tmp.6 = getm $.Toybox.Time;
+    %tmp.7 = getv %tmp.6 :FORMAT_LONG;
+    %tmp.8 = invoke %tmp.1 %tmp.2(%tmp.5, %tmp.7);
+    lputv %today.1 %tmp.8;
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 43 4 ]
+    %tmp.9 = lgetv %today.1;
+    %tmp.10 = getv %tmp.9 :min;
+    %tmp.11 = 60.0;
+    %tmp.12 = div %tmp.10 %tmp.11;
+    ret %tmp.12;
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_41_27_stop:
+}
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc"; @line = 46; ]
+function drawClockHourHand(dc as Dc) {
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_46_37_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 47 4 ]
+    [ "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_46_37_start" "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_46_37_stop" ]
+    %hoursRatio.1 = local;
+    %tmp.1 = self;
+    %tmp.2 = getv function %tmp.1 :getHoursRatio;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    lputv %hoursRatio.1 %tmp.3;
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 48 4 ]
+    [ "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_46_37_start" "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_46_37_stop" ]
+    %hoursHandAngle.2 = local;
+    %tmp.5 = lgetv %hoursRatio.1;
+    %tmp.6 = 360;
+    %tmp.7 = mul %tmp.5 %tmp.6;
+    %tmp.8 = getv function %tmp.7 :toNumber;
+    %tmp.9 = invoke %tmp.7 %tmp.8();
+    lputv %hoursHandAngle.2 %tmp.9;
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 49 4 ]
+    %tmp.10 = lgetv %dc;
+    %tmp.11 = getv function %tmp.10 :setColor;
+    %tmp.12 = self;
+    %tmp.13 = getv function %tmp.12 :getApp;
+    %tmp.14 = invoke %tmp.12 %tmp.13();
+    %tmp.15 = getv function %tmp.14 :getProperty;
+    %tmp.16 = "LightGreen";
+    %tmp.17 = invoke %tmp.14 %tmp.15(%tmp.16);
+    %tmp.18 = as %tmp.17 Number;
+    %tmp.19 = self;
+    %tmp.20 = getv function %tmp.19 :getApp;
+    %tmp.21 = invoke %tmp.19 %tmp.20();
+    %tmp.22 = getv function %tmp.21 :getProperty;
+    %tmp.23 = "LightGreen";
+    %tmp.24 = invoke %tmp.21 %tmp.22(%tmp.23);
+    %tmp.25 = as %tmp.24 Number;
+    invoke %tmp.10 %tmp.11(%tmp.18, %tmp.25);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 50 4 ]
+    %tmp.26 = lgetv %dc;
+    %tmp.27 = getv function %tmp.26 :setPenWidth;
+    %tmp.29 = getv ? :OUTLINE_CIRCLE_MARGIN;
+    invoke %tmp.26 %tmp.27(%tmp.29);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 51 4 ]
+    %tmp.30 = lgetv %dc;
+    %tmp.31 = getv function %tmp.30 :drawArc;
+    %tmp.33 = getv ? :screenRadius;
+    %tmp.35 = getv ? :screenRadius;
+    %tmp.37 = getv ? :screenRadius;
+    %tmp.39 = getv ? :OUTLINE_CIRCLE_MARGIN;
+    %tmp.40 = sub %tmp.37 %tmp.39;
+    %tmp.42 = getv ? :OUTLINE_CIRCLE_MARGIN;
+    %tmp.43 = 2;
+    %tmp.44 = div %tmp.42 %tmp.43;
+    %tmp.45 = add %tmp.40 %tmp.44;
+    %tmp.46 = getm $.Toybox.Graphics;
+    %tmp.47 = getv %tmp.46 :ARC_COUNTER_CLOCKWISE;
+    %tmp.49 = lgetv %hoursHandAngle.2;
+    %tmp.50 = sub 0 %tmp.49;
+    %tmp.51 = 3;
+    %tmp.52 = sub %tmp.50 %tmp.51;
+    %tmp.53 = 90;
+    %tmp.54 = add %tmp.52 %tmp.53;
+    %tmp.56 = lgetv %hoursHandAngle.2;
+    %tmp.57 = sub 0 %tmp.56;
+    %tmp.58 = 3;
+    %tmp.59 = add %tmp.57 %tmp.58;
+    %tmp.60 = 90;
+    %tmp.61 = add %tmp.59 %tmp.60;
+    invoke %tmp.30 %tmp.31(%tmp.33, %tmp.35, %tmp.45, %tmp.47, %tmp.54, %tmp.61);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 52 4 ]
+    [ "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_46_37_start" "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_46_37_stop" ]
+    %highlighPenWidth.3 = local;
+    %tmp.63 = getv ? :OUTLINE_CIRCLE_MARGIN;
+    %tmp.64 = 15;
+    %tmp.65 = sub %tmp.63 %tmp.64;
+    lputv %highlighPenWidth.3 %tmp.65;
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 53 4 ]
+    %tmp.66 = lgetv %dc;
+    %tmp.67 = getv function %tmp.66 :setColor;
+    %tmp.68 = self;
+    %tmp.69 = getv function %tmp.68 :getApp;
+    %tmp.70 = invoke %tmp.68 %tmp.69();
+    %tmp.71 = getv function %tmp.70 :getProperty;
+    %tmp.72 = "DarkGreen";
+    %tmp.73 = invoke %tmp.70 %tmp.71(%tmp.72);
+    %tmp.74 = as %tmp.73 Number;
+    %tmp.75 = self;
+    %tmp.76 = getv function %tmp.75 :getApp;
+    %tmp.77 = invoke %tmp.75 %tmp.76();
+    %tmp.78 = getv function %tmp.77 :getProperty;
+    %tmp.79 = "DarkGreen";
+    %tmp.80 = invoke %tmp.77 %tmp.78(%tmp.79);
+    %tmp.81 = as %tmp.80 Number;
+    invoke %tmp.66 %tmp.67(%tmp.74, %tmp.81);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 54 4 ]
+    %tmp.82 = lgetv %dc;
+    %tmp.83 = getv function %tmp.82 :setPenWidth;
+    %tmp.85 = lgetv %highlighPenWidth.3;
+    invoke %tmp.82 %tmp.83(%tmp.85);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 55 4 ]
+    %tmp.86 = lgetv %dc;
+    %tmp.87 = getv function %tmp.86 :drawArc;
+    %tmp.89 = getv ? :screenRadius;
+    %tmp.91 = getv ? :screenRadius;
+    %tmp.93 = getv ? :screenRadius;
+    %tmp.95 = lgetv %highlighPenWidth.3;
+    %tmp.96 = sub %tmp.93 %tmp.95;
+    %tmp.98 = lgetv %highlighPenWidth.3;
+    %tmp.99 = 2;
+    %tmp.100 = div %tmp.98 %tmp.99;
+    %tmp.101 = add %tmp.96 %tmp.100;
+    %tmp.102 = 2;
+    %tmp.103 = add %tmp.101 %tmp.102;
+    %tmp.104 = getm $.Toybox.Graphics;
+    %tmp.105 = getv %tmp.104 :ARC_COUNTER_CLOCKWISE;
+    %tmp.107 = lgetv %hoursHandAngle.2;
+    %tmp.108 = sub 0 %tmp.107;
+    %tmp.109 = 3;
+    %tmp.110 = sub %tmp.108 %tmp.109;
+    %tmp.111 = 90;
+    %tmp.112 = add %tmp.110 %tmp.111;
+    %tmp.114 = lgetv %hoursHandAngle.2;
+    %tmp.115 = sub 0 %tmp.114;
+    %tmp.116 = 3;
+    %tmp.117 = add %tmp.115 %tmp.116;
+    %tmp.118 = 90;
+    %tmp.119 = add %tmp.117 %tmp.118;
+    invoke %tmp.86 %tmp.87(%tmp.89, %tmp.91, %tmp.103, %tmp.105, %tmp.112, %tmp.119);
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_46_37_stop:
+}
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc"; @line = 58; ]
+function getHoursRatio() {
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_58_25_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 59 4 ]
+    [ "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_58_25_start" "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_58_25_stop" ]
+    %today.1 = local;
+    %tmp.1 = getm $.Toybox.Time.Gregorian;
+    %tmp.2 = getv function %tmp.1 :info;
+    %tmp.3 = getm $.Toybox.Time;
+    %tmp.4 = getv function %tmp.3 :now;
+    %tmp.5 = invoke %tmp.3 %tmp.4();
+    %tmp.6 = getm $.Toybox.Time;
+    %tmp.7 = getv %tmp.6 :FORMAT_LONG;
+    %tmp.8 = invoke %tmp.1 %tmp.2(%tmp.5, %tmp.7);
+    lputv %today.1 %tmp.8;
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc" 60 4 ]
+    %tmp.9 = lgetv %today.1;
+    %tmp.10 = getv %tmp.9 :hour;
+    %tmp.11 = 12.0;
+    %tmp.12 = div %tmp.10 %tmp.11;
+    ret %tmp.12;
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_clockHands_mc_58_25_stop:
+}
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\clockHands.mc"; @line = 1; ]
+<init> {
+}

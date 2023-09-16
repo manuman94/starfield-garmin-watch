@@ -1,0 +1,159 @@
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\timeInfo.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\timeInfo.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\timeInfo.mc"; @line = 3; ]
+using Toybox.Time;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\timeInfo.mc"; @line = 4; ]
+using Toybox.Time.Gregorian;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\timeInfo.mc"; @line = 6; @position = 6; ]
+const DAYS_OF_THE_WEEK;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\timeInfo.mc"; @line = 16; @position = 4; ]
+var timeInfoFont;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\timeInfo.mc"; @line = 18; ]
+function timeInfoInit() {
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_timeInfo_mc_18_24_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\timeInfo.mc" 19 4 ]
+    %tmp.1 = getm $.Toybox.WatchUi;
+    %tmp.2 = getv function %tmp.1 :loadResource;
+    %tmp.4 = getv ? :Rez;
+    %tmp.5 = getv %tmp.4 :Fonts;
+    %tmp.6 = getv %tmp.5 :starfield_12;
+    %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
+    putv self :timeInfoFont %tmp.7;
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_timeInfo_mc_18_24_stop:
+}
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\timeInfo.mc"; @line = 22; ]
+function drawDayOfTheWeek(dc as Dc) {
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_timeInfo_mc_22_36_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\timeInfo.mc" 23 4 ]
+    [ "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_timeInfo_mc_22_36_start" "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_timeInfo_mc_22_36_stop" ]
+    %today.1 = local;
+    %tmp.1 = getm $.Toybox.Time.Gregorian;
+    %tmp.2 = getv function %tmp.1 :info;
+    %tmp.3 = getm $.Toybox.Time;
+    %tmp.4 = getv function %tmp.3 :now;
+    %tmp.5 = invoke %tmp.3 %tmp.4();
+    %tmp.6 = getm $.Toybox.Time;
+    %tmp.7 = getv %tmp.6 :FORMAT_SHORT;
+    %tmp.8 = invoke %tmp.1 %tmp.2(%tmp.5, %tmp.7);
+    lputv %today.1 %tmp.8;
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\timeInfo.mc" 24 4 ]
+    %tmp.9 = lgetv %dc;
+    %tmp.10 = getv function %tmp.9 :setColor;
+    %tmp.11 = self;
+    %tmp.12 = getv function %tmp.11 :getApp;
+    %tmp.13 = invoke %tmp.11 %tmp.12();
+    %tmp.14 = getv function %tmp.13 :getProperty;
+    %tmp.15 = "LightGreen";
+    %tmp.16 = invoke %tmp.13 %tmp.14(%tmp.15);
+    %tmp.17 = as %tmp.16 Number;
+    %tmp.18 = getm $.Toybox.Graphics;
+    %tmp.19 = getv %tmp.18 :COLOR_TRANSPARENT;
+    invoke %tmp.9 %tmp.10(%tmp.17, %tmp.19);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\timeInfo.mc" 25 4 ]
+    %tmp.20 = lgetv %dc;
+    %tmp.21 = getv function %tmp.20 :drawText;
+    %tmp.23 = getv ? :screenRadius;
+    %tmp.25 = getv ? :screenRadius;
+    %tmp.26 = 29;
+    %tmp.27 = sub %tmp.25 %tmp.26;
+    %tmp.29 = getv ? :timeInfoFont;
+    %tmp.31 = getv ? :DAYS_OF_THE_WEEK;
+    %tmp.32 = lgetv %today.1;
+    %tmp.33 = getv %tmp.32 :day_of_week;
+    %tmp.34 = 1;
+    %tmp.35 = sub %tmp.33 %tmp.34;
+    %tmp.36 = agetv %tmp.31 %tmp.35;
+    %tmp.37 = getm $.Toybox.Graphics;
+    %tmp.38 = getv %tmp.37 :TEXT_JUSTIFY_CENTER;
+    %tmp.39 = getm $.Toybox.Graphics;
+    %tmp.40 = getv %tmp.39 :TEXT_JUSTIFY_VCENTER;
+    %tmp.41 = bitor %tmp.38 %tmp.40;
+    invoke %tmp.20 %tmp.21(%tmp.23, %tmp.27, %tmp.29, %tmp.36, %tmp.41);
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_timeInfo_mc_22_36_stop:
+}
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\timeInfo.mc"; @line = 34; ]
+function drawDayOfTheMonth(dc as Dc) {
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_timeInfo_mc_34_37_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\timeInfo.mc" 35 4 ]
+    [ "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_timeInfo_mc_34_37_start" "C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_timeInfo_mc_34_37_stop" ]
+    %today.1 = local;
+    %tmp.1 = getm $.Toybox.Time.Gregorian;
+    %tmp.2 = getv function %tmp.1 :info;
+    %tmp.3 = getm $.Toybox.Time;
+    %tmp.4 = getv function %tmp.3 :now;
+    %tmp.5 = invoke %tmp.3 %tmp.4();
+    %tmp.6 = getm $.Toybox.Time;
+    %tmp.7 = getv %tmp.6 :FORMAT_LONG;
+    %tmp.8 = invoke %tmp.1 %tmp.2(%tmp.5, %tmp.7);
+    lputv %today.1 %tmp.8;
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\timeInfo.mc" 36 4 ]
+    %tmp.9 = lgetv %dc;
+    %tmp.10 = getv function %tmp.9 :setColor;
+    %tmp.11 = self;
+    %tmp.12 = getv function %tmp.11 :getApp;
+    %tmp.13 = invoke %tmp.11 %tmp.12();
+    %tmp.14 = getv function %tmp.13 :getProperty;
+    %tmp.15 = "LightGreen";
+    %tmp.16 = invoke %tmp.13 %tmp.14(%tmp.15);
+    %tmp.17 = as %tmp.16 Number;
+    %tmp.18 = getm $.Toybox.Graphics;
+    %tmp.19 = getv %tmp.18 :COLOR_TRANSPARENT;
+    invoke %tmp.9 %tmp.10(%tmp.17, %tmp.19);
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\timeInfo.mc" 37 4 ]
+    %tmp.20 = lgetv %dc;
+    %tmp.21 = getv function %tmp.20 :drawText;
+    %tmp.23 = getv ? :screenRadius;
+    %tmp.25 = getv ? :screenRadius;
+    %tmp.26 = 23;
+    %tmp.27 = add %tmp.25 %tmp.26;
+    %tmp.29 = getv ? :timeInfoFont;
+    %tmp.30 = getm $.Toybox.Lang;
+    %tmp.31 = getv function %tmp.30 :format;
+    %tmp.32 = "$1$ $2$";
+    %tmp.33 = newa 2;
+    %tmp.34 = lgetv %today.1;
+    %tmp.35 = getv %tmp.34 :day;
+    %tmp.36 = dup %tmp.33;
+    %tmp.37 = aputv %tmp.36 0 %tmp.35;
+    %tmp.38 = lgetv %today.1;
+    %tmp.39 = getv %tmp.38 :month;
+    %tmp.40 = dup %tmp.37;
+    %tmp.41 = aputv %tmp.40 1 %tmp.39;
+    %tmp.42 = invoke %tmp.30 %tmp.31(%tmp.32, %tmp.41);
+    %tmp.43 = getm $.Toybox.Graphics;
+    %tmp.44 = getv %tmp.43 :TEXT_JUSTIFY_CENTER;
+    %tmp.45 = getm $.Toybox.Graphics;
+    %tmp.46 = getv %tmp.45 :TEXT_JUSTIFY_VCENTER;
+    %tmp.47 = bitor %tmp.44 %tmp.46;
+    invoke %tmp.20 %tmp.21(%tmp.23, %tmp.27, %tmp.29, %tmp.42, %tmp.47);
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_components_timeInfo_mc_34_37_stop:
+}
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\timeInfo.mc"; @line = 1; ]
+<init> {
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\components\timeInfo.mc" 6 6 ]
+    %tmp.48 = newa 7;
+    %tmp.49 = "DOMINGO";
+    %tmp.50 = dup %tmp.48;
+    %tmp.51 = aputv %tmp.50 0 %tmp.49;
+    %tmp.52 = "LUNES";
+    %tmp.53 = dup %tmp.51;
+    %tmp.54 = aputv %tmp.53 1 %tmp.52;
+    %tmp.55 = "MARTES";
+    %tmp.56 = dup %tmp.54;
+    %tmp.57 = aputv %tmp.56 2 %tmp.55;
+    %tmp.58 = "MIERCOLES";
+    %tmp.59 = dup %tmp.57;
+    %tmp.60 = aputv %tmp.59 3 %tmp.58;
+    %tmp.61 = "JUEVES";
+    %tmp.62 = dup %tmp.60;
+    %tmp.63 = aputv %tmp.62 4 %tmp.61;
+    %tmp.64 = "VIERNES";
+    %tmp.65 = dup %tmp.63;
+    %tmp.66 = aputv %tmp.65 5 %tmp.64;
+    %tmp.67 = "SABADO";
+    %tmp.68 = dup %tmp.66;
+    %tmp.69 = aputv %tmp.68 6 %tmp.67;
+    putv self :DAYS_OF_THE_WEEK %tmp.69;
+}

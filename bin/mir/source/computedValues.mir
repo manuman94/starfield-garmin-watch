@@ -1,0 +1,38 @@
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\computedValues.mc"; @line = 1; ]
+import Toybox.Graphics;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\computedValues.mc"; @line = 2; ]
+using Toybox.ActivityMonitor;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\computedValues.mc"; @line = 4; @position = 4; ]
+var screenWidth;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\computedValues.mc"; @line = 5; @position = 4; ]
+var screenRadius;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\computedValues.mc"; @line = 7; @position = 4; ]
+var activityInfo;
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\computedValues.mc"; @line = 9; ]
+function initComputedValues(dc as Dc) {
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_computedValues_mc_9_38_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\computedValues.mc" 10 4 ]
+    %tmp.1 = lgetv %dc;
+    %tmp.2 = getv function %tmp.1 :getWidth;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    putv self :screenWidth %tmp.3;
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\computedValues.mc" 11 4 ]
+    %tmp.5 = getv ? :screenWidth;
+    %tmp.6 = 2;
+    %tmp.7 = div %tmp.5 %tmp.6;
+    putv self :screenRadius %tmp.7;
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_computedValues_mc_9_38_stop:
+}
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\computedValues.mc"; @line = 14; ]
+function updateComputedValues() {
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_computedValues_mc_14_32_start:
+[ "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\computedValues.mc" 15 4 ]
+    %tmp.1 = getm $.Toybox.ActivityMonitor;
+    %tmp.2 = getv function %tmp.1 :getInfo;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    putv self :activityInfo %tmp.3;
+C_Users_sora__Documents_projects_GarminWatchfaces_Starfield_starfield_source_computedValues_mc_14_32_stop:
+}
+[ @file = "C:\Users\sora_\Documents\projects\GarminWatchfaces\Starfield\starfield\source\computedValues.mc"; @line = 1; ]
+<init> {
+}
