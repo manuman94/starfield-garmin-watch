@@ -23,7 +23,7 @@ Running the Starfield watchface in a simulator allows you to preview how it will
 3. **Clone the Repository**: Clone this GitHub repository to your local machine using Git or by downloading the ZIP file.
 
 ```bash
-git clone https://github.com/yourusername/starfield-watchface.git
+git clone https://github.com/manuman94/starfield-garmin-watch.git
 ```
 
 4. **Run the application**: If you use Eclipse run using the Run button. In VSCode you can go by pressing F5 to launch the simulator and run the application.
