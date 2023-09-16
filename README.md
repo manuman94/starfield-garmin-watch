@@ -2,7 +2,7 @@
 
 ![Starfield Watchface Preview](preview.jpeg)
 
-This project is a custom watchface inspired by the fictional smartwatch in the Starfield video game. It's designed for Garmin smartwatches, providing a sleek and futuristic look to your wearable device.
+This project is a custom watchface inspired by the fictional smartwatch Chronomark in the Starfield video game. It's designed for Garmin smartwatches, providing a sleek and futuristic look to your wearable device.
 
 Tested in Garmin Forerunner 255, but should work easily with devices with the same resolution (260 x 260 pixels)
 
